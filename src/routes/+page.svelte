@@ -1,3 +1,8 @@
+<script lang="ts">
+    import Header from '$lib/Header.svelte';
+    import Footer from '$lib/Footer.svelte';
+</script>
+
 <div class="boxed_wrapper">
     <!-- preloader -->
     <!-- <div class="loader-wrap">
@@ -46,186 +51,7 @@
 
 
     <!-- main header -->
-    <header class="main-header header-style-one">
-        <div class="header-top">
-            <div class="top-inner">
-                <div class="top-left">
-                    <ul class="info clearfix">
-                        <li><i class="flaticon-pin"></i>66 broklyn golden street. New York</li>
-                        <li><i class="flaticon-email"></i><a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                        <li><i class="flaticon-clock"></i>Mon - Sat 9:00 am to 6:00 pm</li>
-                    </ul>
-                </div>
-                <div class="top-right">
-                    <ul class="social-links clearfix">
-                        <li><a href="index-2.html"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="index-2.html"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="index-2.html"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a href="index-2.html"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                    <ul class="other-links clearfix">
-                        <li><a href="index-2.html">Membership</a></li>
-                        <li><a href="index-2.html">Events</a></li>
-                        <li><a href="index-2.html">Zoo Map</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header-lower">
-            <div class="outer-box">
-                <div class="logo-box">
-                    <figure class="logo"><a href="index-2.html"><img src="/images/logo.png" alt=""></a></figure>
-                </div>
-                <div class="menu-area">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler">
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                    </div>
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="index-2.html">Home</a>
-                                    <ul>
-                                        <li><a href="index-2.html">Home Page One</a></li>
-                                        <li><a href="index-3.html">Home Page Two</a></li>
-                                        <li><a href="index-onepage.html">Home OnePage</a></li>
-                                        <li><a href="index-rtl.html">Home RTL</a></li>
-                                        <li class="dropdown"><a href="index-2.html">Header Style</a>
-                                            <ul>
-                                                <li><a href="index-2.html">Header Style One</a></li>
-                                                <li><a href="index-3.html">Header Style Two</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="index-2.html">Pages</a>
-                                    <ul>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="pricing.html">Our Pricing</a></li>
-                                        <li><a href="gallery.html">Our Gallery</a></li>
-                                        <li><a href="error.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="index-2.html">Our Animals</a>
-                                    <ul>
-                                        <li><a href="animals.html">Animals</a></li>
-                                        <li><a href="deer.html">Deer</a></li>
-                                        <li><a href="wolf.html">Wolf</a></li>
-                                        <li><a href="elephant.html">Elephant</a></li>
-                                        <li><a href="girrafe.html">Girrafe</a></li>
-                                        <li><a href="monkey.html">Monkey</a></li>
-                                        <li><a href="cheeta.html">Cheeta</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="index-2.html">Elements</a>
-                                    <div class="megamenu">
-                                        <div class="row clearfix">
-                                            <div class="col-lg-6 column">
-                                                <ul>
-                                                    <li><h4>Elements 1</h4></li>
-                                                    <li><a href="about-element-1.html">About Block 01</a></li>
-                                                    <li><a href="about-element-2.html">About Block 02</a></li>
-                                                    <li><a href="about-element-3.html">About Block 03</a></li>
-                                                    <li><a href="funfact-element-1.html">Funfact Block 01</a></li>
-                                                    <li><a href="funfact-element-2.html">Funfact Block 02</a></li>
-                                                    <li><a href="news-element-1.html">News Block 01</a></li>
-                                                    <li><a href="news-element-2.html">News Block 02</a></li>
-                                                    <li><a href="team-element-1.html">Team Block 01</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 column">
-                                                <ul>
-                                                    <li><h4>Elements 2</h4></li>
-                                                    <li><a href="team-element-2.html">Team Block 02</a></li>
-                                                    <li><a href="pricing-element-1.html">Pricing Block 01</a></li>
-                                                    <li><a href="pricing-element-2.html">Pricing Block 02</a></li>
-                                                    <li><a href="chooseus-element.html">Chooseus Block</a></li>
-                                                    <li><a href="video-element.html">Video Block</a></li>
-                                                    <li><a href="testimonial-element.html">Testimonial Block</a></li>
-                                                    <li><a href="cta-element.html">Cta Block</a></li>
-                                                    <li><a href="clients-element.html">Clients Block</a></li>
-                                                </ul>
-                                            </div>                                      
-                                        </div>                                            
-                                    </div>
-                                </li>
-                                <li class="dropdown"><a href="index-2.html">Blog</a>
-                                    <ul>
-                                        <li><a href="blog.html">Our Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>                              
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="menu-right-content">
-                    <div class="support-box">
-                        <div class="icon"><i class="flaticon-phone-ringing"></i></div>
-                        <span>Have Questions?</span>
-                        <h6><a href="tel:12463330089">+ 1- (246) 333-0089</a></h6>
-                    </div>
-                    <div class="search-box-outer">
-                        <div class="dropdown">
-                            <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-magnifying-glass"></i></button>
-                            <div class="dropdown-menu search-panel" aria-labelledby="dropdownMenu3">
-                                <div class="form-container">
-                                    <form method="post" action="https://azim.commonsupport.com/Weldlfe/blog.html">
-                                        <div class="form-group">
-                                            <input type="search" name="search-field" value="" placeholder="Search...." required="">
-                                            <button type="submit" class="search-btn"><span class="fas fa-search"></span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-box">
-                        <a href="index-2.html">Book your ticket</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--sticky Header-->
-        <div class="sticky-header">
-            <div class="outer-box">
-                <div class="logo-box">
-                    <figure class="logo"><a href="index-2.html"><img src="assets/images/logo.png" alt=""></a></figure>
-                </div>
-                <div class="menu-area">
-                    <nav class="main-menu clearfix">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav>
-                </div>
-                <div class="menu-right-content">
-                    <div class="support-box">
-                        <div class="icon"><i class="flaticon-phone-ringing"></i></div>
-                        <span>Have Questions?</span>
-                        <h6><a href="tel:12463330089">+ 1- (246) 333-0089</a></h6>
-                    </div>
-                    <div class="search-box-outer">
-                        <div class="dropdown">
-                            <button class="search-box-btn" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-magnifying-glass"></i></button>
-                            <div class="dropdown-menu search-panel" aria-labelledby="dropdownMenu4">
-                                <div class="form-container">
-                                    <form method="post" action="https://azim.commonsupport.com/Weldlfe/blog.html">
-                                        <div class="form-group">
-                                            <input type="search" name="search-field" value="" placeholder="Search...." required="">
-                                            <button type="submit" class="search-btn"><span class="fas fa-search"></span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <Header />
     <!-- main-header end -->
 
     <!-- Mobile Menu  -->
@@ -234,7 +60,7 @@
         <div class="close-btn"><i class="fas fa-times"></i></div>
         
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index-2.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
+            <div class="nav-logo"><a href="#/"><img src="images/logo-2.png" alt="" title=""></a></div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             <div class="contact-info">
                 <h4>Contact Info</h4>
@@ -246,11 +72,11 @@
             </div>
             <div class="social-links">
                 <ul class="clearfix">
-                    <li><a href="index-2.html"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="index-2.html"><span class="fab fa-facebook-square"></span></a></li>
-                    <li><a href="index-2.html"><span class="fab fa-pinterest-p"></span></a></li>
-                    <li><a href="index-2.html"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="index-2.html"><span class="fab fa-youtube"></span></a></li>
+                    <li><a href="#/"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#/"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#/"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="#/"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#/"><span class="fab fa-youtube"></span></a></li>
                 </ul>
             </div>
         </nav>
@@ -261,49 +87,49 @@
     <section class="banner-section">
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url(assets/images/banner/banner-1.jpg)"></div>
+                <div class="image-layer" style="background-image:url(images/banner/banner-1.jpg)"></div>
                 <div class="auto-container">
                     <div class="content-box">
-                        <h3>Explore Our Animals</h3>
+                        <h3>Explore Our ConservaCam</h3>
                         <h2>New Wildlife Experience of Joy</h2>
                         <div class="btn-box">
-                            <a href="index-2.html" class="theme-btn btn-one">Discover More</a>
+                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
                         </div>
                     </div>  
                 </div>
             </div>
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url(assets/images/banner/banner-2.jpg)"></div>
+                <div class="image-layer" style="background-image:url(images/banner/banner-2.jpg)"></div>
                 <div class="auto-container">
                     <div class="content-box">
-                        <h3>Explore Our Animals</h3>
+                        <h3>Explore Our ConservaCam</h3>
                         <h2>New Wildlife Experience of Joy</h2>
                         <div class="btn-box">
-                            <a href="index-2.html" class="theme-btn btn-one">Discover More</a>
+                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
                         </div>
                     </div>  
                 </div>
             </div>
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url(assets/images/banner/banner-3.jpg)"></div>
+                <div class="image-layer" style="background-image:url(images/banner/banner-3.jpg)"></div>
                 <div class="auto-container">
                     <div class="content-box">
-                        <h3>Explore Our Animals</h3>
+                        <h3>Explore Our ConservaCam</h3>
                         <h2>New Wildlife Experience of Joy</h2>
                         <div class="btn-box">
-                            <a href="index-2.html" class="theme-btn btn-one">Discover More</a>
+                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
                         </div>
                     </div>  
                 </div>
             </div>
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url(assets/images/banner/banner-4.jpg)"></div>
+                <div class="image-layer" style="background-image:url(images/banner/banner-4.jpg)"></div>
                 <div class="auto-container">
                     <div class="content-box">
-                        <h3>Explore Our Animals</h3>
+                        <h3>Explore Our ConservaCam</h3>
                         <h2>New Wildlife Experience of Joy</h2>
                         <div class="btn-box">
-                            <a href="index-2.html" class="theme-btn btn-one">Discover More</a>
+                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
                         </div>
                     </div>  
                 </div>
@@ -316,28 +142,28 @@
     <!-- info-section -->
     <section class="info-section">
         <div class="bg-layer"></div>
-        <span class="rotate-text">wild animal zoo</span>
+        <span class="rotate-text">What is ConservaCam?</span>
         <div class="auto-container">
             <div class="inner-container">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                         <div class="single-item">
                             <div class="icon-box"><i class="flaticon-ticket"></i></div>
-                            <h5><a href="index-2.html">Buy Tickets</a></h5>
+                            <h5><a href="#/">Buy Tickets</a></h5>
                             <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                         <div class="single-item">
                             <div class="icon-box"><i class="flaticon-calendar"></i></div>
-                            <h5><a href="index-2.html">new events</a></h5>
+                            <h5><a href="#/">new events</a></h5>
                             <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                         <div class="single-item">
                             <div class="icon-box"><i class="flaticon-map"></i></div>
-                            <h5><a href="index-2.html">zoo map</a></h5>
+                            <h5><a href="#/">zoo map</a></h5>
                             <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
                         </div>
                     </div>
@@ -355,9 +181,9 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                     <div class="image_block_one">
                         <div class="image-box">
-                            <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                            <figure class="image"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
-                            <div class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></div>
+                            <div class="shape" style="background-image: url(images/shape/shape-1.png);"></div>
+                            <figure class="image"><img src="images/resource/about-1.jpg" alt=""></figure>
+                            <div class="icon-box"><img src="images/icons/icon-1.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -365,11 +191,11 @@
                     <div class="content_block_one">
                         <div class="content-box">
                             <div class="sec-title">
-                                <h2>welcome to best weldlfe zoo</h2>
+                                <h2>Revolutionizing Wildlife Conservation with AI-Powered Insight</h2>
                             </div>
                             <div class="text">
-                                <h4>Help us to protect wildlife around the world.</h4>
-                                <p>There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
+                                <h4>Help us to protect wildlife around the world using ConservaCam.</h4>
+                                <p>Monitor biodiversity effortlessly. Empower conservation decisions with real-time data.</p>
                                 <ul class="list-style-one clearfix">
                                     <li>Lorem Ipsum is not simply random text</li>
                                     <li>If you are going to use a passage</li>
@@ -377,7 +203,7 @@
                                 </ul>
                             </div>
                             <div class="btn-box">
-                                <a href="about.html" class="theme-btn btn-one">discover more</a>
+                                <a href="about.html" class="theme-btn btn-one">Purchase Now</a>
                             </div>
                         </div>
                     </div>
@@ -391,20 +217,24 @@
     <!-- chooseus-section -->
     <section class="chooseus-section sec-pad">
         <div class="img-wrap parallax-demo-1">
-            <div class="parallax-inner back-img" style="background-image: url(assets/images/background/chooseus-bg.jpg);"></div>
+            <div class="parallax-inner back-img" style="background-image: url(images/background/chooseus-bg.jpg);"></div>
         </div>
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
                     <div class="inner-box">
                         <div class="sec-title">
-                            <h2>Why You should choose our zoo visit?</h2>
+                            <h2>Why should you chose ConservaCam?</h2>
                         </div>
                         <div class="row clearfix">
                             <div class="col-lg-6 col-md-6 col-sm-12 text-column">
                                 <div class="text">
-                                    <p>There are many variations of passages of but the majority have alteration in some form by injected humour or which don't look even slightly believe.</p>
-                                    <figure class="signature"><img src="assets/images/icons/signature-1.png" alt=""></figure>
+                                    <p>ConservaCam combines motion-sensing hardware and AI-driven software to
+                                        capture, analyze, and transmit biodiversity data. Our system identifies individual
+                                        animals, tracks behaviors, and provides actionable insights to support conservation
+                                        efforts.
+                                        </p>
+                                    <figure class="signature"><img src="images/icons/signature-1.png" alt=""></figure>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 text-column">
@@ -422,12 +252,12 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 content-column">
                     <div class="content-box">
                         <div class="content-inner">
-                            <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-                            <figure class="image-layer  wow zoomIn animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="assets/images/resource/lion-1.png" alt=""></figure>
+                            <div class="shape" style="background-image: url(images/shape/shape-2.png);"></div>
+                            <figure class="image-layer  wow zoomIn animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="images/resource/lion-1.png" alt=""></figure>
                             <h3>Family Membership</h3>
                             <h5>Yearly Package</h5>
                             <h2>$128.00</h2>
-                            <a href="index-2.html" class="theme-btn">buy now</a>
+                            <a href="#/" class="theme-btn">buy now</a>
                         </div>
                     </div>
                 </div>
@@ -448,7 +278,7 @@
             <div class="gallery-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
                 <div class="gallery-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="assets/images/gallery/gallery-1.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/gallery-1.jpg" alt=""></figure>
                         <div class="content-box">
                             <h3><a href="deer.html">deer</a></h3>
                         </div>
@@ -461,7 +291,7 @@
                 </div>
                 <div class="gallery-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="assets/images/gallery/gallery-2.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/gallery-2.jpg" alt=""></figure>
                         <div class="content-box">
                             <h3><a href="wolf.html">wolf</a></h3>
                         </div>
@@ -474,7 +304,7 @@
                 </div>
                 <div class="gallery-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="assets/images/gallery/gallery-3.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/gallery-3.jpg" alt=""></figure>
                         <div class="content-box">
                             <h3><a href="elephant.html">elephant</a></h3>
                         </div>
@@ -487,7 +317,7 @@
                 </div>
                 <div class="gallery-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="assets/images/gallery/gallery-4.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/gallery-4.jpg" alt=""></figure>
                         <div class="content-box">
                             <h3><a href="girrafe.html">girrafe</a></h3>
                         </div>
@@ -500,7 +330,7 @@
                 </div>
                 <div class="gallery-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="assets/images/gallery/gallery-5.jpg" alt=""></figure>
+                        <figure class="image-box"><img src="images/gallery/gallery-5.jpg" alt=""></figure>
                         <div class="content-box">
                             <h3><a href="monkey.html">monkey</a></h3>
                         </div>
@@ -520,15 +350,15 @@
     <!-- clients-section -->
     <section class="clients-section">
         <div class="img-wrap parallax-demo-1">
-            <div class="parallax-inner back-img" style="background-image: url(assets/images/background/clients-bg.jpg);"></div>
+            <div class="parallax-inner back-img" style="background-image: url(images/background/clients-bg.jpg);"></div>
         </div>
         <div class="auto-container">
             <div class="five-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-                <figure class="clients-logo"><a href="index-2.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-                <figure class="clients-logo"><a href="index-2.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-                <figure class="clients-logo"><a href="index-2.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-                <figure class="clients-logo"><a href="index-2.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-                <figure class="clients-logo"><a href="index-2.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
+                <figure class="clients-logo"><a href="#/"><img src="images/clients/clients-1.png" alt=""></a></figure>
+                <figure class="clients-logo"><a href="#/"><img src="images/clients/clients-2.png" alt=""></a></figure>
+                <figure class="clients-logo"><a href="#/"><img src="images/clients/clients-3.png" alt=""></a></figure>
+                <figure class="clients-logo"><a href="#/"><img src="images/clients/clients-4.png" alt=""></a></figure>
+                <figure class="clients-logo"><a href="#/"><img src="images/clients/clients-5.png" alt=""></a></figure>
             </div>
         </div>
     </section>
@@ -566,7 +396,7 @@
                             <div class="video-btn">
                                 <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="fas fa-play"></i></a>
                             </div>
-                            <figure class="image"><img src="assets/images/resource/adventure-1.jpg" alt=""></figure>
+                            <figure class="image"><img src="images/resource/adventure-1.jpg" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -586,7 +416,7 @@
                 <div class="testimonil-block-one">
                     <div class="inner-box">
                         <div class="author-thumb">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="images/resource/testimonial-1.jpg" alt=""></figure>
                             <div class="quote"><i class="flaticon-quote"></i></div>
                         </div>
                         <div class="text">
@@ -601,7 +431,7 @@
                 <div class="testimonil-block-one">
                     <div class="inner-box">
                         <div class="author-thumb">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-2.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="images/resource/testimonial-2.jpg" alt=""></figure>
                             <div class="quote"><i class="flaticon-quote"></i></div>
                         </div>
                         <div class="text">
@@ -616,7 +446,7 @@
                 <div class="testimonil-block-one">
                     <div class="inner-box">
                         <div class="author-thumb">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-3.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="images/resource/testimonial-3.jpg" alt=""></figure>
                             <div class="quote"><i class="flaticon-quote"></i></div>
                         </div>
                         <div class="text">
@@ -637,13 +467,13 @@
     <!-- events-section -->
     <section class="events-section sec-pad">
         <div class="bg-layer"></div>
-        <div class="bg-image" style="background-image: url(assets/images/background/events-bg.jpg);"></div>
+        <div class="bg-image" style="background-image: url(images/background/events-bg.jpg);"></div>
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 title-column">
                     <div class="sec-title light">
                         <h2>Check zoo upcoming events</h2>
-                        <a href="index-2.html" class="theme-btn btn-one">view all</a>
+                        <a href="#/" class="theme-btn btn-one">view all</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
@@ -651,7 +481,7 @@
                         <div class="events-block-one">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/events-1.jpg" alt=""></figure>
+                                    <figure class="image"><img src="images/resource/events-1.jpg" alt=""></figure>
                                     <div class="post-date"><h6>16<span>dec</span></h6></div>
                                 </div>
                                 <div class="inner">
@@ -659,7 +489,7 @@
                                         <li><i class="far fa-clock"></i>2:00 am</li>
                                         <li><i class="far fa-map"></i>60 broklyn street</li>
                                     </ul>
-                                    <h3><a href="index-2.html">zebra and girrafe on the street</a></h3>
+                                    <h3><a href="#/">zebra and girrafe on the street</a></h3>
                                     <p>Suspendisse finibus urna mauris, lorem ipsum is simply free.</p>
                                 </div>
                             </div>
@@ -667,7 +497,7 @@
                         <div class="events-block-one">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/events-2.jpg" alt=""></figure>
+                                    <figure class="image"><img src="images/resource/events-2.jpg" alt=""></figure>
                                     <div class="post-date"><h6>05<span>dec</span></h6></div>
                                 </div>
                                 <div class="inner">
@@ -675,7 +505,7 @@
                                         <li><i class="far fa-clock"></i>2:00 am</li>
                                         <li><i class="far fa-map"></i>60 broklyn street</li>
                                     </ul>
-                                    <h3><a href="index-2.html">how Interaction with Animal can</a></h3>
+                                    <h3><a href="#/">how Interaction with Animal can</a></h3>
                                     <p>Suspendisse finibus urna mauris, lorem ipsum is simply free.</p>
                                 </div>
                             </div>
@@ -691,7 +521,7 @@
     <!-- funfact-section -->
     <section class="funfact-section">
         <div class="img-wrap parallax-demo-1">
-            <div class="parallax-inner back-img" style="background-image: url(assets/images/background/funfact-bg.jpg);"></div>
+            <div class="parallax-inner back-img" style="background-image: url(images/background/funfact-bg.jpg);"></div>
         </div>
         <div class="auto-container">
             <div class="row clearfix">
@@ -756,7 +586,7 @@
                     <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-1.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="blog-details.html"><img src="images/news/news-1.jpg" alt=""></a></figure>
                                 <div class="post-date"><h6>16<span>dec</span></h6></div>
                             </div>
                             <div class="lower-content">
@@ -774,7 +604,7 @@
                     <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-2.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="blog-details.html"><img src="images/news/news-2.jpg" alt=""></a></figure>
                                 <div class="post-date"><h6>15<span>dec</span></h6></div>
                             </div>
                             <div class="lower-content">
@@ -792,7 +622,7 @@
                     <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="blog-details.html"><img src="images/news/news-3.jpg" alt=""></a></figure>
                                 <div class="post-date"><h6>14<span>dec</span></h6></div>
                             </div>
                             <div class="lower-content">
@@ -817,13 +647,13 @@
         <div class="bg-layer"></div>
         <div class="auto-container">
             <div class="inner-box clearfix">
-                <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                <figure class="image-layer"><img src="assets/images/resource/animals-1.png" alt=""></figure>
+                <div class="pattern-layer" style="background-image: url(images/shape/shape-3.png);"></div>
+                <figure class="image-layer"><img src="images/resource/animals-1.png" alt=""></figure>
                 <div class="text pull-left">
                     <h2>The animals in <br />our parks</h2>
                 </div>
                 <div class="btn-box pull-right">
-                    <a href="index-2.html" class="theme-btn btn-one">discover more</a>
+                    <a href="#/" class="theme-btn btn-one">Purchase Now</a>
                 </div>
             </div>
         </div>
@@ -832,91 +662,7 @@
 
 
     <!-- main-footer -->
-    <section class="main-footer">
-        <div class="footer-top">
-            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                        <div class="footer-widget logo-widget">
-                            <figure class="footer-logo"><a href="index-2.html"><img src="assets/images/footer-logo.png" alt=""></a></figure>
-                            <ul class="footer-social clearfix">
-                                <li><a href="index-2.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index-2.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index-2.html"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="index-2.html"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
-                        <div class="footer-widget links-widget">
-                            <div class="widget-title">
-                                <h5>Links</h5>
-                            </div>
-                            <div class="widget-content">
-                                <ul class="links-list clearfix">
-                                    <li><a href="index-2.html">About Us</a></li>
-                                    <li><a href="index-2.html">Book Tickets</a></li>
-                                    <li><a href="index-2.html">Meet the Animals</a></li>
-                                    <li><a href="index-2.html">Our Gallery</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                        <div class="footer-widget contact-widget">
-                            <div class="widget-title">
-                                <h5>Contact</h5>
-                            </div>
-                            <div class="widget-content">
-                                <ul class="info clearfix">
-                                    <li><i class="flaticon-telephone"></i><a href="tel:6668880000">666 888 0000</a></li>
-                                    <li><i class="flaticon-email"></i><a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                                    <li><i class="flaticon-pin"></i>66 broklyn golden street line new york</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                        <div class="footer-widget gallery-widget">
-                            <div class="widget-title">
-                                <h5>Gallery</h5>
-                            </div>
-                            <div class="widget-content">
-                                <ul class="image-list clearfix">
-                                    <li>
-                                        <figure class="image">
-                                            <img src="assets/images/resource/footer-1.jpg" alt="">
-                                            <a href="assets/images/resource/footer-1.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-plus-symbol"></i></a>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure class="image">
-                                            <img src="assets/images/resource/footer-2.jpg" alt="">
-                                            <a href="assets/images/resource/footer-2.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-plus-symbol"></i></a>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure class="image">
-                                            <img src="assets/images/resource/footer-3.jpg" alt="">
-                                            <a href="assets/images/resource/footer-3.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-plus-symbol"></i></a>
-                                        </figure>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom centred">
-            <div class="auto-container">
-                <div class="copyright">
-                    <p>&copy; Copyright 2022 by <a href="index-2.html">weldlfe.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <Footer />
     <!-- main-footer end -->
 
 
