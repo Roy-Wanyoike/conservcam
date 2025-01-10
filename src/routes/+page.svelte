@@ -175,6 +175,7 @@
 
 
     <!-- about-section -->
+    <a href="/about" class="btn btn-primary">
     <section class="about-section sec-pad">
         <div class="auto-container">
             <div class="row clearfix">
@@ -211,6 +212,9 @@
             </div>
         </div>
     </section>
+    </a>
+
+    
     <!-- about-section end -->
 
 
