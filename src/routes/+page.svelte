@@ -38,6 +38,18 @@
       description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
     },
   ];
+  let headline = "Robust and Reliable Technology for the Wild";
+  let features2 = [
+    "Motion Sensors: PIR and microwave for precise detection.",
+    "Camera Module: OpenMV microcontroller with 480p resolution.",
+    "Wireless Communication: NRF24L01 for data transmission.",
+    "Power Management: Sleep mode for extended battery life.",
+  ];
+  let visuals = [
+    "High-quality 3D renders of hardware.",
+    "Diagram showcasing modular components.",
+  ];
+  let ctaText = "See the Full Hardware Specs";
    
   
 </script>
@@ -72,6 +84,33 @@
     font-size: 2rem;
     color: #6c63ff;
     margin-bottom: 15px;
+  }
+  .hardware-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+
+  .hardware-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .feature-list li {
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #5b54e6;
   }
 
 </style>
@@ -250,16 +289,16 @@
     <section class="chooseus-section sec-pad">
         <div class="container my-5">
             <div class="text-center mb-4">
-              <h2 class="fw-bold">{{ heading }}</h2>
-              <p class="text-muted">{{ subheading }}</p>
+              <h2 class="fw-bold">{ heading }</h2>
+              <p class="text-muted">{ subheading }</p>
             </div>
             <div class="row g-4">
               {#each features as feature}
                 <div class="col-md-4">
                   <div class="feature-card p-4 bg-white text-center">
-                    <!-- <i class="bi {{ features.icon }} feature-icon"></i> -->
-                    <h5 class="fw-bold">{{ feature.title }}</h5>
-                    <p class="text-muted">{{ feature.description }}</p>
+                    <i class="bi { feature.icon } feature-icon"></i>
+                    <h5 class="fw-bold">{ feature.title }</h5>
+                    <p class="text-muted">{ feature.description }</p>
                   </div>
                 </div>
               {/each}
@@ -315,84 +354,36 @@
 
     <!-- gallery-section -->
     <section class="gallery-section">
-        <div class="auto-container">
-            <div class="sec-title centred">
-                <h2>amazing Animals <br />in our zoo</h2>
-            </div>
-        </div>
-        <div class="outer-container">
-            <div class="gallery-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-1.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="deer.html">deer</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="deer.html">deer</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="deer.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-2.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="wolf.html">wolf</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="wolf.html">wolf</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="wolf.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-3.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="elephant.html">elephant</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="elephant.html">elephant</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="elephant.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-4.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="girrafe.html">girrafe</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="girrafe.html">girrafe</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="girrafe.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-5.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="monkey.html">monkey</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="monkey.html">monkey</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="monkey.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <!-- gallery-section end -->
-
-
+    <div class="container hardware-section">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-4">{ headline }</h2>
+            <h5>Key Features:</h5>
+            <ul class="feature-list">
+              {#each features2 as feature}
+                <li>{ feature }</li>
+              {/each}
+            </ul>
+            <h5 class="mt-4">Visuals:</h5>
+            <ul class="feature-list">
+              {#each visuals as visual}
+                <li>{ visual }</li>
+              {/each}
+            </ul>
+            <button class="cta-button mt-4">{ ctaText }</button>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="images/resource/adventure-1.jpg"
+              alt="Hardware Render"
+              class="hardware-image"
+            />
+          </div>
+        </div>
+      </div>
     <!-- clients-section -->
     <section class="clients-section">
         <div class="img-wrap parallax-demo-1">
