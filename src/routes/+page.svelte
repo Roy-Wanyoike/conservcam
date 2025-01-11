@@ -1,7 +1,119 @@
 <script lang="ts">
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte';
+
+
+    let heading = "Why Prolab Is Best";
+    let subheading =
+    "Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise.";
+    let features = [
+    {
+      icon: "bi-palette",
+      title: "Interactive Design",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+    {
+      icon: "bi-cloud-download",
+      title: "Install Apps",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+    {
+      icon: "bi-geo-alt",
+      title: "GPS Tracking",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+    {
+      icon: "bi-chat-dots",
+      title: "Live Chat",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+    {
+      icon: "bi-tools",
+      title: "Fully Functional",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+    {
+      icon: "bi-camera",
+      title: "4k Camera",
+      description: "Viewing hastily or written dearest elderly up weather; direction to sweetness. Donec dearest justo eget felis.",
+    },
+  ];
+  let headline = "Robust and Reliable Technology for the Wild";
+  let features2 = [
+    "Motion Sensors: PIR and microwave for precise detection.",
+    "Camera Module: OpenMV microcontroller with 480p resolution.",
+    "Wireless Communication: NRF24L01 for data transmission.",
+    "Power Management: Sleep mode for extended battery life.",
+  ];
+  let visuals = [
+    "High-quality 3D renders of hardware.",
+    "Diagram showcasing modular components.",
+  ];
+  let ctaText = "See the Full Hardware Specs";
+   
+  
 </script>
+
+
+<style>
+   
+  .ripple {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .ripple img {
+    transition: transform 0.3s ease;
+  }
+
+  .ripple:hover img {
+    transform: scale(1.05);
+  }
+  .feature-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  .feature-icon {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 15px;
+  }
+  .hardware-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+
+  .hardware-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .feature-list li {
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #5b54e6;
+  }
+
+</style>
 
 <div class="boxed_wrapper">
     <!-- preloader -->
@@ -81,101 +193,59 @@
             </div>
         </nav>
     </div><!-- End Mobile Menu -->
+<br>
+<br>
+<br>
+<br>
 
-
-    <!-- banner-section -->
-    <section class="banner-section">
-        <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
-            <div class="slide-item">
-                <div class="image-layer" style="background-image:url(images/banner/banner-1.jpg)"></div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <h3>Explore Our ConservaCam</h3>
-                        <h2>New Wildlife Experience of Joy</h2>
-                        <div class="btn-box">
-                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
-                        </div>
-                    </div>  
-                </div>
+<!-- banner-section -->
+<section class="banner-section">
+    <div class="container-fluid bg-light min-vh-100 d-flex align-items-center pt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="display-4 fw-bold mb-3">Revolutionizing Wildlife Conservation with AI-Powered Insights</h2>
+              <p class="lead text-muted mb-4">Monitor biodiversity effortlessly. Empower conservation decisions with real-time
+                data.</p>
+              <a href="#" class="btn btn-primary btn-lg">Purchase Now</a>
             </div>
-            <div class="slide-item">
-                <div class="image-layer" style="background-image:url(images/banner/banner-2.jpg)"></div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <h3>Explore Our ConservaCam</h3>
-                        <h2>New Wildlife Experience of Joy</h2>
-                        <div class="btn-box">
-                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
-                        </div>
-                    </div>  
-                </div>
+            <div class="col-md-6 text-center">
+              <div class="ripple">
+                <img src="images/gallery/gallery-8.jpg" alt="Digital Watch" class="img-fluid rounded">
+              </div>
             </div>
-            <div class="slide-item">
-                <div class="image-layer" style="background-image:url(images/banner/banner-3.jpg)"></div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <h3>Explore Our ConservaCam</h3>
-                        <h2>New Wildlife Experience of Joy</h2>
-                        <div class="btn-box">
-                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-            <div class="slide-item">
-                <div class="image-layer" style="background-image:url(images/banner/banner-4.jpg)"></div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <h3>Explore Our ConservaCam</h3>
-                        <h2>New Wildlife Experience of Joy</h2>
-                        <div class="btn-box">
-                            <a href="#/" class="theme-btn btn-one">Purchase Now</a>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+</section>
     <!-- banner-section end -->
 
 
     <!-- info-section -->
     <section class="info-section">
-        <div class="bg-layer"></div>
-        <span class="rotate-text">What is ConservaCam?</span>
-        <div class="auto-container">
-            <div class="inner-container">
-                <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item">
-                            <div class="icon-box"><i class="flaticon-ticket"></i></div>
-                            <h5><a href="#/">Buy Tickets</a></h5>
-                            <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item">
-                            <div class="icon-box"><i class="flaticon-calendar"></i></div>
-                            <h5><a href="#/">new events</a></h5>
-                            <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                        <div class="single-item">
-                            <div class="icon-box"><i class="flaticon-map"></i></div>
-                            <h5><a href="#/">zoo map</a></h5>
-                            <p>Lorem ium dolor sit ameted pisicing elit sed do ut.</p>
-                        </div>
-                    </div>
+        <div class="container section-padding">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center">
+                <img src="images/gallery/gallery-8.jpg" alt="How HubSpot Works" class="img-fluid rounded"> <!-- Replace with actual image path -->
+              </div>
+              <div class="col-md-6">
+                <h2 class="fw-bold mb-3">The Future of Wildlife Monitoring</h2>
+                <p class="text-muted mb-4">ConservaCam combines motion-sensing hardware and AI-driven software to
+                    capture, analyze, and transmit biodiversity data. Our system identifies individual
+                    animals, tracks behaviors, and provides actionable insights to support conservation
+                    efforts.</p>
+                <div>
+                  <a href="#/" class="btn btn-demo me-3">Get a demo</a>
+                  <a href="#/" class="btn btn-started">Get started free</a>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </section>
     <!-- info-section end -->
 
 
     <!-- about-section -->
-    <a href="/about" class="btn btn-primary">
     <section class="about-section sec-pad">
         <div class="auto-container">
             <div class="row clearfix">
@@ -212,17 +282,28 @@
             </div>
         </div>
     </section>
-    </a>
-
-    
     <!-- about-section end -->
 
 
     <!-- chooseus-section -->
     <section class="chooseus-section sec-pad">
-        <div class="img-wrap parallax-demo-1">
-            <div class="parallax-inner back-img" style="background-image: url(images/background/chooseus-bg.jpg);"></div>
-        </div>
+        <div class="container my-5">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold">{ heading }</h2>
+              <p class="text-muted">{ subheading }</p>
+            </div>
+            <div class="row g-4">
+              {#each features as feature}
+                <div class="col-md-4">
+                  <div class="feature-card p-4 bg-white text-center">
+                    <i class="bi { feature.icon } feature-icon"></i>
+                    <h5 class="fw-bold">{ feature.title }</h5>
+                    <p class="text-muted">{ feature.description }</p>
+                  </div>
+                </div>
+              {/each}
+            </div>
+          </div>
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
@@ -273,84 +354,36 @@
 
     <!-- gallery-section -->
     <section class="gallery-section">
-        <div class="auto-container">
-            <div class="sec-title centred">
-                <h2>amazing Animals <br />in our zoo</h2>
-            </div>
-        </div>
-        <div class="outer-container">
-            <div class="gallery-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-1.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="deer.html">deer</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="deer.html">deer</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="deer.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-2.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="wolf.html">wolf</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="wolf.html">wolf</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="wolf.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-3.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="elephant.html">elephant</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="elephant.html">elephant</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="elephant.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-4.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="girrafe.html">girrafe</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="girrafe.html">girrafe</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="girrafe.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="images/gallery/gallery-5.jpg" alt=""></figure>
-                        <div class="content-box">
-                            <h3><a href="monkey.html">monkey</a></h3>
-                        </div>
-                        <div class="overlay-content">
-                            <h3><a href="monkey.html">monkey</a></h3>
-                            <p>There are many type of <br />variations pass not available</p>
-                            <div class="link"><a href="monkey.html"><i class="flaticon-right-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <!-- gallery-section end -->
-
-
+    <div class="container hardware-section">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-4">{ headline }</h2>
+            <h5>Key Features:</h5>
+            <ul class="feature-list">
+              {#each features2 as feature}
+                <li>{ feature }</li>
+              {/each}
+            </ul>
+            <h5 class="mt-4">Visuals:</h5>
+            <ul class="feature-list">
+              {#each visuals as visual}
+                <li>{ visual }</li>
+              {/each}
+            </ul>
+            <button class="cta-button mt-4">{ ctaText }</button>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="images/resource/adventure-1.jpg"
+              alt="Hardware Render"
+              class="hardware-image"
+            />
+          </div>
+        </div>
+      </div>
     <!-- clients-section -->
     <section class="clients-section">
         <div class="img-wrap parallax-demo-1">
