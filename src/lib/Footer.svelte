@@ -1,6 +1,51 @@
 <script>
+    let showMessage = false;
 
+function handleSubmit(event) {
+  event.preventDefault();
+  showMessage = true;
+
+  // Hide the notification after a few seconds
+  setTimeout(() => {
+    showMessage = false;
+  }, 3000);
+}
 </script>
+
+<style>
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-out, fadeOut 0.3s ease-out 2.7s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+</style>
+
+
 <section class="main-footer">
     <div class="footer-top">
         <div class="pattern-layer" style="background-image: url(images/shape/shape-4.png);"></div>
@@ -9,13 +54,25 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget logo-widget">
                         <figure class="footer-logo"><a href="#/"><img src="images/footer-logo.png" alt=""></a></figure>
-                        <ul class="footer-social clearfix">
-                            <li><a href="#/"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#/"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#/"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#/"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+                        <form on:submit={handleSubmit}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required/>
+                              </div>
+                        </form>
+                        {#if showMessage}
+                        <div class="alert alert-success mt-3" role="alert">
+                          Message Sent Successfully!
+                        </div>
+                      {/if}
                     </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" required />
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" placeholder="Write your message here" rows="5" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">SEND MESSAGE</button>
+
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget links-widget">
@@ -81,7 +138,7 @@
     <div class="footer-bottom centred">
         <div class="auto-container">
             <div class="copyright">
-                <p>&copy; Copyright 2022 by <a href="#/">weldlfe.com</a></p>
+                <p>&copy; Copyright 2025 by <a href="#/">weldlfe.com</a></p>
             </div>
         </div>
     </div>

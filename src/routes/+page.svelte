@@ -14,7 +14,7 @@
     {
       icon: "bi-cloud-download",
       title: "Built for the Wild",
-      description: "Durable, weather-resistant hardware designed to withstand extreme environments.Low power consumption ensures extended battery life, even in remote areas.Compact and unobtrusive design blends seamlessly into natural habitats,avoiding disturbance.",
+      description: "Durable, weather-resistant hardware designed to withstand extreme environments.Low power consumption ensures extended battery life, even in remote areas.Compact and unobtrusive design.",
     },
     {
       icon: "bi-geo-alt",
@@ -282,7 +282,7 @@
                   <div class="feature-card p-4 bg-white text-center">
                     <i class="bi { feature.icon } feature-icon"></i>
                     <h5 class="fw-bold">{ feature.title }</h5>
-                    <p class="text-muted">{ feature.description }</p>
+                    <p class="text-muted">{ feature.description } &nbsp;</p>
                   </div>
                 </div>
               {/each}
